@@ -30,7 +30,7 @@ describe('Convention-based installation', function () {
     installer = new Installer(finder, symlinker);
   });
 
-  it.skip('should symlink files', function (done) {
+  it('should symlink files', function (done) {
     fileSystem.listDirectory.returns(promiseOf([
       'path/to/.gitconfig.symlink',
       'path/to/.gitconfig_include.linux-symlink'
